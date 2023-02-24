@@ -1,38 +1,40 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
+  align-content: center;
+  
+}
+.jorden-kobe
+{
+  background-image: url('./images/jorden-on-kobe.jpg');
+  background-size: cover;
+  height: 35rem;
+  width: 35rem;
+  
+}
+.out
+{
+  text-align: center;
+  align-self: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.main-header{ color: #fff;
+   font-family: 'Righteous', cursive;
+    font-size: 65px;
+     font-weight: normal;
+      line-height: 60px;
+       margin: 10px 0 20px;
+        text-transform: uppercase;
+         text-shadow: 2px 2px 0 #000;
+         margin: 10px 0 24px;
+          text-align: center;
+        }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

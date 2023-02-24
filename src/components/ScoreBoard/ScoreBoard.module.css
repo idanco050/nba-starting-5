@@ -1,0 +1,20 @@
+.vs
+{
+    color: #fff;
+   font-family: 'Righteous', cursive;
+    font-size: 65px;
+     font-weight: normal;
+      line-height: 60px;
+        text-transform: uppercase;
+         text-shadow: 2px 2px 0 #000;
+        
+          text-align: center;
+          margin-top: 3rem;
+}
+
+
+.scoreBoard
+{
+    display: flex;
+  flex-direction: row;
+}
