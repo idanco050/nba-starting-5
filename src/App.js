@@ -25,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="main-header">NBA Starting 5</h1>
+      {!isGameOn && <p className = "description">With our app, you can create a starting lineup from a pool of every NBA player who has ever played in the league, and then watch as they compete against each other in a simulated game. Each player can only be switched twice before the game begins, so choose your lineup carefully! Our app generates a random set of starting players for each team, and then uses advanced algorithms to simulate a realistic game experience. Will your starting five come out on top?</p>}
       <PlayersGrid
         players={playerFive}
         swap={swapPlayer1}

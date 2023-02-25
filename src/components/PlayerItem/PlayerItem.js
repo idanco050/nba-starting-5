@@ -2,6 +2,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import { useDispatch } from "react-redux";
+import classes from './PlayerItem.module.css'
 
 const PlayerItem = (props) => {
   const dispatch = useDispatch();
@@ -17,12 +18,12 @@ const PlayerItem = (props) => {
     }
   };
   return (
-    <Card sx={{ maxWidth: 345 }} style={{ borderRadius: 16,backgroundColor: "peachpuff",fontFamily: "Georgia"} }>
+    <Card className ={classes.playerCardRoot}>
       <CardContent>
-        <h1>
+        <h1 className = {classes.playerCardTitle}>
           {props.data.first_name} {props.data.last_name}
         </h1>
-        <h3>{props.data.team.full_name}</h3>
+        <h3 className = {classes.playerCardSubheader}>{props.data.team.full_name}</h3>
         <Button size="small" onClick={switchPlayerHandler}>
           switch player
         </Button>
